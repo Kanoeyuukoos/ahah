@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="yt-frame" id="player_box" onclick="showLogo()">
+    <div id="v_logo" class="channel-logo"></div>
+    <video id="iptv" autoplay playsinline></video>
+</div>
+
+<div class="container">
+    <label class="btn-add">
+        + TAMBAH M3U DARI INTERNAL
+        <input type="file" id="m3u_file" accept=".m3u,.m3u8">
+    </label>
+
+    <div id="ch_list" class="list">
+        <div style="color:#444; text-align:center; padding:20px;">Belum ada list saluran</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
